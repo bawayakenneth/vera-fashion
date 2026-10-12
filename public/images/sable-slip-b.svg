@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Sable Slip Dress alternate view">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dfe4ea"/><stop offset="1" stop-color="#c4ccd6"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f596e"/><stop offset="1" stop-color="#14213d"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M130 1000 V430 A270 270 0 0 1 670 430 V1000 Z" fill="#fff" opacity=".28"/>
+  <ellipse cx="400" cy="900" rx="210" ry="22" fill="#000" opacity=".12"/>
+  <g transform="translate(800 0) scale(-1 1)">
+    
+    <path d="M335 220 L400 300 L465 220 L505 255 L485 430 L585 820 Q400 870 215 820 L315 430 L295 255 Z" fill="url(#g)" stroke="#0e172b" stroke-width="3" stroke-opacity=".45" stroke-linejoin="round"/>
+    <path d="M400 400 V820" stroke="#0e172b" stroke-width="3" opacity=".35"/>
+       <path d="M340 470 Q330 640 300 800 M460 470 Q470 640 500 800" stroke="#0e172b" stroke-width="3" fill="none" opacity=".25"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "verra-store",
+  "version": "1.0.0",
+  "description": "Customizable fashion-store website prototype (zero runtime dependencies)",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "images": "node scripts/generate-placeholders.mjs",
+    "test": "node --test"
+  }
+}

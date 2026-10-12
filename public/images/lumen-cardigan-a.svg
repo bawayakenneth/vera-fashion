@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Lumen Cardigan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ead9dc"/><stop offset="1" stop-color="#d7bcc2"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0dbd1"/><stop offset="1" stop-color="#d6cfc2"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M200 1000 V430 A200 200 0 0 1 600 430 V1000 Z" fill="#fff" opacity=".28"/>
+  <ellipse cx="400" cy="900" rx="210" ry="22" fill="#000" opacity=".12"/>
+  <g transform="">
+    
+    <path d="M320 235 Q400 295 480 235 L630 335 L585 490 L525 450 L525 770 L275 770 L275 450 L215 490 L170 335 Z" fill="url(#g)" stroke="#969188" stroke-width="3" stroke-opacity=".45" stroke-linejoin="round"/>
+    <path d="M400 400 V820" stroke="#969188" stroke-width="3" opacity=".35"/>
+       <path d="M340 470 Q330 640 300 800 M460 470 Q470 640 500 800" stroke="#969188" stroke-width="3" fill="none" opacity=".25"/>
+  </g>
+</svg>
