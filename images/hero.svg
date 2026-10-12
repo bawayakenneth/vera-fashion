@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Campaign placeholder">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d3d6"/><stop offset="1" stop-color="#cdb3ba"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <path d="M120 1100 V520 A330 330 0 0 1 780 520 V1100 Z" fill="#fff" opacity=".32"/>
+  <ellipse cx="450" cy="1000" rx="330" ry="26" fill="#000" opacity=".12"/>
+  <g transform="translate(60 40) scale(1.0)"><path d="M300 210 L400 250 L500 210 L625 300 L605 840 L440 850 L440 420 L400 395 L360 420 L360 850 L195 840 L175 300 Z" fill="#4a5d70"/><path d="M400 395 V850" stroke="#2e3d4c" stroke-width="3" opacity=".4"/></g>
+  <g transform="translate(330 120) scale(.82)"><path d="M335 220 L400 300 L465 220 L505 255 L485 430 L585 820 Q400 870 215 820 L315 430 L295 255 Z" fill="#7a1f34"/></g>
+</svg>
