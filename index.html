@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>VERRA — A More Considered Way to Dress</title>
+  <meta name="description" content="A contemporary fashion concept featuring considered everyday style. Demonstration store for portfolio presentation.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23101a2b'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='Georgia'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to products</a>
+  <div class="announce" id="announce" role="note"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" data-bind="brand.name">Verra</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#lookbook">The Edit</a>
+      <a href="#about">Our Point of View</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cart-open" aria-controls="cart-drawer" aria-expanded="false">
+      Bag <span class="cart-count" id="cart-count" aria-label="0 items in bag">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="hero-copy">
+        <h1 id="hero-headline"></h1>
+        <p id="hero-sub"></p>
+        <a class="btn" id="hero-cta" href="#shop"></a>
+      </div>
+      <div class="hero-media">
+        <img id="hero-img" alt="" width="900" height="1100" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section" id="shop" aria-labelledby="shop-title">
+      <div class="section-head">
+        <h2 id="shop-title">The collection</h2>
+        <p class="muted" id="result-count" aria-live="polite"></p>
+      </div>
+      <div class="toolbar">
+        <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        <label class="sort">
+          <span>Sort by</span>
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="price-desc">Price, high to low</option>
+            <option value="name">Name</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid" id="product-grid"></div>
+      <p class="empty" id="empty-state" hidden>No products in this category yet. Try another one.</p>
+    </section>
+
+    <section class="section lookbook" id="lookbook" aria-labelledby="lookbook-title">
+      <div class="section-head"><h2 id="lookbook-title">The style journal</h2></div>
+      <div class="look-grid" id="lookbook-grid"></div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <h2 id="about-title"></h2>
+        <div id="about-copy"></div>
+      </div>
+      <dl class="facts" id="about-facts"></dl>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-info">
+        <h2 id="contact-title">Let’s start a conversation.</h2>
+        <address id="contact-details"></address>
+      </div>
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input id="c-name" name="name" autocomplete="name" required>
+          <p class="error" id="c-name-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="c-email">Email address</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" required>
+          <p class="error" id="c-email-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="5" required></textarea>
+          <p class="error" id="c-message-err" role="alert"></p>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p class="status" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="foot-top">
+      <a class="wordmark" href="#top" data-bind="brand.name">Verra</a>
+      <form class="newsletter" id="newsletter-form" novalidate>
+        <label for="n-email">Get new arrivals by email</label>
+        <div class="newsletter-row">
+          <input id="n-email" type="email" autocomplete="email" placeholder="you@example.com">
+          <button class="btn" type="submit">Subscribe</button>
+        </div>
+        <p class="status" id="newsletter-status" role="status"></p>
+      </form>
+    </div>
+    <p class="muted small"><span id="footer-note"></span> &copy; <span id="year"></span> <span data-bind="brand.name">Verra</span></p>
+  </footer>
+
+  <dialog class="quickview" id="quickview" aria-labelledby="qv-title">
+    <button class="icon-btn qv-close" id="quickview-close" aria-label="Close product details">&times;</button>
+    <div id="quickview-body"></div>
+  </dialog>
+
+  <div class="overlay" id="cart-overlay" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true" inert>
+    <div class="drawer-head">
+      <h2>Your bag</h2>
+      <button class="icon-btn" id="cart-close" aria-label="Close bag">&times;</button>
+    </div>
+    <p class="empty" id="cart-empty">Your bag is empty. Add something from the collection.</p>
+    <ul class="cart-list" id="cart-items"></ul>
+    <div class="cart-foot" id="cart-summary" hidden>
+      <p class="ship-msg" id="ship-msg"></p>
+      <div class="ship-track"><div class="ship-bar" id="ship-bar"></div></div>
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="cart-subtotal"></dd></div>
+        <div><dt>Shipping</dt><dd id="cart-shipping"></dd></div>
+        <div class="grand"><dt>Total</dt><dd id="cart-total"></dd></div>
+      </dl>
+      <button class="btn btn-block" id="checkout-btn">Check out</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
